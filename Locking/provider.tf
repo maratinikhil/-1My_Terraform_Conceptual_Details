@@ -6,13 +6,13 @@ terraform {
     }
   }
 
-  backend "s3" {
-      bucket = "godrej-app-ubuntu-db-unique"
-      region = "ap-south-1"
-      key = "data/state"
-      encrypt = true
-      dynamodb_table = "MYDB"
-  }
+  # backend "s3" {
+  #     bucket = "godrej-app-ubuntu-db-unique"
+  #     region = "ap-south-1"
+  #     key = "data/state"
+  #     encrypt = true
+  #     dynamodb_table = "My_DB_Terra"
+  # }
 }
 
 provider "aws" {
